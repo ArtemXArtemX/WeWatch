@@ -1,4 +1,4 @@
-package com.example.wewatch
+package com.bignerdranch.android.wewatch
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
