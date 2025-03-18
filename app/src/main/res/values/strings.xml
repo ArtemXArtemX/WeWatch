@@ -1,11 +1,5 @@
 <resources>
     <string name="app_name">WeWatch</string>
-    <string name="main_activity">Movies to Watch</string>
-    <string name="textWithoutMovies">There are currently no movies in your watch list.
-    Tap the button below to get started</string>
-    <string name="descriptionTrash">Delete select movies</string>
-    <string name="addButton">+</string>
-    <string name="descriptionIcon">Icon movie</string>
-    <string name="add_movie">Add Movie</string>
-    <string name="search_result">Search Result</string>
+    <string name="fab_text">Floating Action button</string>
+    <string name="no_movies_text">No movies found</string>
 </resources>
