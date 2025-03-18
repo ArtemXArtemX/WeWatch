@@ -18,6 +18,7 @@ import com.bignerdranch.android.wewatch.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.example.wewatch.add.AddMovieActivity
 import com.example.wewatch.model.LocalDataSource
+import com.example.wewatch.model.Movie
 
 class MainActivity : AppCompatActivity(), MainContract.ViewInterface {
 

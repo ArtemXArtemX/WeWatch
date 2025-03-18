@@ -4,6 +4,7 @@ import com.example.wewatch.model.Movie
 
 class MainContract {
     interface PresenterInterface {
+
         //TODO: добавить методы интерфейса для Presenter
         fun getMyMoviesList()
         fun stop()

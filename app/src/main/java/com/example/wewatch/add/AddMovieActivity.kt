@@ -8,7 +8,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.wewatch.R
+import com.bignerdranch.android.wewatch.R
 import com.example.wewatch.search.SearchActivity
 import com.example.wewatch.model.LocalDataSource
 import com.example.wewatch.network.RetrofitClient.TMDB_IMAGEURL
