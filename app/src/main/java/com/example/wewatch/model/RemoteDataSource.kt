@@ -1,7 +1,7 @@
 package com.example.wewatch.model
 
 import android.util.Log
-import com.sample.wewatch.network.RetrofitClient
+import com.example.wewatch.network.RetrofitClient
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 

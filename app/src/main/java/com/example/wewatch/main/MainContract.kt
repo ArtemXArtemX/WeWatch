@@ -1,6 +1,6 @@
-package com.sample.wewatch.main
+package com.example.wewatch.main
 
-import com.sample.wewatch.model.Movie
+import com.example.wewatch.model.Movie
 
 class MainContract {
     interface PresenterInterface {

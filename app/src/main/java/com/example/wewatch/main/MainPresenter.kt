@@ -1,9 +1,9 @@
-package com.sample.wewatch.main
+package com.example.wewatch.main
 
 import android.support.annotation.NonNull
 import android.util.Log
-import com.sample.wewatch.model.LocalDataSource
-import com.sample.wewatch.model.Movie
+import com.example.wewatch.model.LocalDataSource
+import com.example.wewatch.model.Movie
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
