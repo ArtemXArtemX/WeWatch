@@ -1,6 +1,5 @@
-package com.sample.wewatch.main
+package com.example.wewatch.main
 
-import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
@@ -17,17 +16,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bignerdranch.android.wewatch.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.sample.wewatch.R
-import com.sample.wewatch.add.AddMovieActivity
-import com.sample.wewatch.model.LocalDataSource
-import com.sample.wewatch.model.Movie
-import io.reactivex.Observable
-import io.reactivex.android.schedulers.AndroidSchedulers
-
-import io.reactivex.annotations.NonNull
-import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.observers.DisposableObserver
-import io.reactivex.schedulers.Schedulers
+import com.example.wewatch.add.AddMovieActivity
+import com.example.wewatch.model.LocalDataSource
 
 class MainActivity : AppCompatActivity(), MainContract.ViewInterface {
 

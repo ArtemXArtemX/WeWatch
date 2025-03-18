@@ -1,6 +1,6 @@
 package com.bignerdranch.android.wewatch.network
 
-import com.bignerdranch.android.wewatch.database.TmdbResponse
+import com.example.wewatch.model.TmdbResponse
 import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Query

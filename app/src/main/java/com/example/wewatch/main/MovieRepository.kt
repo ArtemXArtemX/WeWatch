@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.Room
 import com.bignerdranch.android.wewatch.DATABASE_NAME
 import com.bignerdranch.android.wewatch.database.MovieDatabase
+import com.example.wewatch.model.Movie
 import java.util.UUID
 import java.util.concurrent.Executors
 
