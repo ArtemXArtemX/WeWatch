@@ -1,13 +1,14 @@
-package com.bignerdranch.android.wewatch
+package com.example.wewatch.main
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import android.widget.Button
-import com.example.wewatch.AddActivity
+import com.bignerdranch.android.wewatch.R
+import com.example.wewatch.add.AddActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var addButton: Button

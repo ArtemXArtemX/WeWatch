@@ -1,4 +1,4 @@
-package com.example.wewatch
+package com.example.wewatch.add
 
 import android.os.Bundle
 import android.widget.Button

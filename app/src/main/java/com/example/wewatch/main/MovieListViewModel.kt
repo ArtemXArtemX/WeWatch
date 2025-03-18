@@ -1,4 +1,4 @@
-package com.bignerdranch.android.wewatch
+package com.example.wewatch.main
 
 import androidx.lifecycle.ViewModel
 

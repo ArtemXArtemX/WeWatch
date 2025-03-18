@@ -1,6 +1,6 @@
 package com.bignerdranch.android.wewatch.database
 
-import com.bignerdranch.android.wewatch.Movie
+import com.example.wewatch.main.Movie
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 

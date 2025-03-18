@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
-import com.bignerdranch.android.wewatch.Movie
+import com.example.wewatch.main.Movie
 import java.util.UUID
 
 @Dao

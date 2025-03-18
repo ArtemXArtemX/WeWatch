@@ -1,13 +1,13 @@
-package com.bignerdranch.android.wewatch
+package com.example.wewatch.main
 
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.room.Room
+import com.bignerdranch.android.wewatch.DATABASE_NAME
 import com.bignerdranch.android.wewatch.database.MovieDatabase
 import java.util.UUID
 import java.util.concurrent.Executors
 
-private const val DATABASE_NAME = "movie-database"
 class MovieRepository private  constructor(context: Context){
     private val database : MovieDatabase =
         Room.databaseBuilder(
