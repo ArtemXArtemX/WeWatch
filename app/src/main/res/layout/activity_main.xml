@@ -1,97 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".main.MainActivity">
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/movies_recyclerview"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.wewatch.main.MainActivity">
+    android:layout_height="match_parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="411dp"
-        android:layout_height="63dp"
-        android:background="#6200ED"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/main_activity"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/buttonDelete"
-        android:layout_width="56dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="#006750A3"
-        android:contentDescription="@string/descriptionTrash"
-        android:scaleX="2"
-        android:scaleY="2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:srcCompat="@drawable/baseline_restore_from_trash_24" />
-
-    <Button
-        android:id="@+id/buttonAdd"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#03D9C4"
-        android:text="@string/addButton"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+  <LinearLayout
+    android:id="@+id/no_movies_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/dp_quad"
+    android:layout_marginEnd="@dimen/dp_quad"
+    android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/imageWithoutMovies"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/descriptionIcon"
-        android:scaleX="4"
-        android:scaleY="4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_movie_24" />
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:layout_marginBottom="@dimen/dp_double"
+      android:src="@drawable/ic_movie_teal_24dp"/>
 
-    <TextView
-        android:id="@+id/textWithoutMovies"
-        android:layout_width="357dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:text="@string/textWithoutMovies"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonAdd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageWithoutMovies"
-        app:layout_constraintVertical_bias="0.07"
-        tools:ignore="TextSizeCheck" />
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      android:text="There are currently no movies in your watch list. Tap the button below to get started!"
+      android:textAlignment="center" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+  </LinearLayout>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/fab"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom|end"
+      android:layout_margin="@dimen/fab_margin"
+      android:contentDescription="@string/fab_text"
+      android:onClick="goToAddMovieActivity"
+      android:tint="@android:color/white"
+      app:srcCompat="@android:drawable/ic_input_add" />
+
+</FrameLayout>
