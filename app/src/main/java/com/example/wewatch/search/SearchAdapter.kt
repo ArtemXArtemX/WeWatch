@@ -7,8 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bignerdranch.android.wewatch.R
-import com.example.wewatch.search.SearchActivity
+import com.example.wewatch.R
 import com.example.wewatch.model.Movie
 import com.squareup.picasso.Picasso
 

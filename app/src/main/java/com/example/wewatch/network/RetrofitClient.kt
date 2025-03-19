@@ -8,7 +8,8 @@ object RetrofitClient {
     // http://www.omdbapi.com/?i=tt3896198&apikey=e45f429b
     const val API_KEY = "e45f429b"
     const val TMDB_BASE_URL = "https://www.omdbapi.com/"
-    const val TMDB_IMAGEURL = "https://m.media-amazon.com/images/M/"
+    const val TMDB_IMAGEURL = ""
+    //const val TMDB_IMAGEURL = "https://m.media-amazon.com/images/M/"
 
     val moviesApi = Retrofit.Builder()
         .baseUrl(TMDB_BASE_URL)

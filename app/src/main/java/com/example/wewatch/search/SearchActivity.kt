@@ -12,12 +12,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.bignerdranch.android.wewatch.R
+import com.example.wewatch.R
 import com.example.wewatch.model.RemoteDataSource
 import com.example.wewatch.model.TmdbResponse
-import com.example.wewatch.search.SearchAdapter
-import com.example.wewatch.search.SearchContract
-import com.example.wewatch.search.SearchPresenter
 
 //const val SEARCH_QUERY = "searchQuery"
 
@@ -103,7 +100,7 @@ class SearchActivity : AppCompatActivity(), SearchContract.ViewInterface {
    * Listener for clicks on tasks in the ListView.
    */
   internal var itemListener: RecyclerItemListener = object : RecyclerItemListener {
-    override fun onItemClick(view: View, position: Int) {
+    override fun onItemClick(v: View, position: Int) {
       val movie = adapter.getItemAtPosition(position)
 
       val replyIntent = Intent()

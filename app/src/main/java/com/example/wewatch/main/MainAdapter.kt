@@ -8,7 +8,7 @@ import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bignerdranch.android.wewatch.R
+import com.example.wewatch.R
 import com.example.wewatch.network.RetrofitClient
 import com.example.wewatch.model.Movie
 

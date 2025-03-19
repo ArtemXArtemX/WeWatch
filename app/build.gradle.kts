@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.bignerdranch.android.wewatch"
+    namespace = "com.example.wewatch"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.bignerdranch.android.wewatch"
+        applicationId = "com.example.wewatch"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
